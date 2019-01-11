@@ -4,6 +4,8 @@ import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 
 import { HeroService } from '../hero.service';
+import { DxButtonModule  } from 'devextreme-angular';
+
 
 @Component({
   selector: 'app-hero-detail',
@@ -31,5 +33,8 @@ getHero(): void {
 
   goBack(): void {
   this.location.back();
+}
+helloWorld() {
+  alert('Hello world!');
 }
 }

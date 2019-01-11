@@ -7,3 +7,20 @@
     </div>
   </a>
 </div>
+
+<h2>DxTabs</h2>
+
+<dx-tabs
+    id="tabs"
+    [dataSource]="tabs"
+    [selectedIndex]="0"
+    (onItemClick)="selectTab($event)">
+</dx-tabs>
+<div class="tab-content dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-label">Selected content:</div>
+        <div class="dx-field-value-static left-aligned">
+            {{tabContent}}
+        </div>
+    </div>
+</div>
